@@ -1,0 +1,13 @@
+language: python
+python:
+  #- "3.5"
+  - "2.7"
+#command to install dependencies
+install:
+  - sudo apt-get install ffmpeg
+  - "pip install -r requirements.txt"
+
+#command to run tests
+script: pytest --doctest-modules -v
+
+sudo: required

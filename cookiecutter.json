@@ -1,0 +1,17 @@
+{
+    "full_name": "Fatma Deniz",
+    "email": "fatma@berkeley.edu",
+    "github_username": "fatmai",
+    "project_name": "Name of your project",
+    "project_repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "python_package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_description": "A short description of your project",
+    "use_pytest": "y",
+    "release_date": "{% now 'local' %}",
+    "version": "0.1.0",
+    "s3_bucket": "[OPTIONAL] your-bucket-for-syncing-data (do not include 's3://')",
+    "docdb_name": "",
+    "raw_mri_root": "s3://raw_mri",
+    "create_author_file": "y",
+    "open_source_license": ["Not open source", "MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3"]
+}
